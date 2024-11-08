@@ -6,8 +6,8 @@ import { routes as localRoutes } from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter([
-      ...localRoutes,    // 그 다음 local routes를 로드
-      ...originRoutes,  // origin-app의 routes를 먼저 로드
+      ...localRoutes,   // local routes를 로 새로 추가된 url은 덮어 쓰는 형식
+      ...originRoutes,  // origin-app의 routes를 로드
     ])
   ]
 };
